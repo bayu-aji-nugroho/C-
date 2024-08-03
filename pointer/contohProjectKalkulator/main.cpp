@@ -10,19 +10,19 @@ int main(){
 }
 
 void Plus(double &aPtr){
-    aPtr = aPtr + n;
+    aPtr = aPtr + (aPtr +n);
 }
 
 void Minus(double &aPtr){
-    aPtr = aPtr + n;
+    aPtr = aPtr -  (aPtr +n);
 }
 
 void Times(double &aPtr){
-    aPtr = aPtr + n;
+    aPtr = aPtr *  (aPtr +n);
 }
 
 void Div(double &aPtr){
-    aPtr = aPtr + n;
+    aPtr = aPtr /  (aPtr +n);
 }
 
 void ui(){
@@ -30,7 +30,7 @@ void ui(){
     char input;
     cout << "masukkan nilai a dan b" << endl;
     cin >>a; cin >>b;
-    n = a-b;
+    n = b-a;
     cout << "+,-,x,/" << endl;
     cin >> input;
     if(input == '+'){
